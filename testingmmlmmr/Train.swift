@@ -18,30 +18,35 @@ class Train {
     var availableAcceleration: Int {
         return acceleration
     }
+    var isOn: Bool {
+        return ignition
+    }
     // MARk: - Private Properties
     private var speed = 0
     private var acceleration = 2
-    private var isStart = false
+    private var ignition = false
     // MARK: Init
     init() {
         self.serialNumber = UUID().uuidString
     }
     // MARK: - Public
-    func makeBeep() {
-        print("TUU-TUU")
+    func makeBeep() -> String {
+        let beep = "TUU-TUU"
+        print(beep)
+        return beep
     }
     func increaseSpeed(by speed: Int ) {
-        guard isStart else { return }
+        guard ignition else { return }
         let spd = self.speed + speed
         guard spd < maxSpeed else {
             self.speed = maxSpeed
             return
         }
-        self.speed = maxSpeed
+        self.speed = spd
         print("Speed inscreased. current speed now: \(self.speed)")
     }
     func decreaseSpeed(by speed: Int) {
-        guard isStart else { return }
+        guard ignition else { return }
         let spd = self.speed - speed
         guard spd > 0 else {
             self.speed = 0
@@ -52,12 +57,12 @@ class Train {
     }
     func stopTrain() {
         self.speed = 0
-        isStart = false
+        ignition = false
         print("Train stopped")
     }
     func startTrain() {
-        guard !isStart else { return }
-        isStart = true
+        guard !ignition else { return }
+        ignition = true
         self.speed = 10
     }
 }

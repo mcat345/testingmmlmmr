@@ -15,6 +15,7 @@
 		6D00E0D61FB83702009D267F /* testingmmlmmrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D00E0D51FB83702009D267F /* testingmmlmmrTests.swift */; };
 		6D00E0E11FB83702009D267F /* testingmmlmmrUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D00E0E01FB83702009D267F /* testingmmlmmrUITests.swift */; };
 		6D00E0EF1FB83718009D267F /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D00E0EE1FB83718009D267F /* Train.swift */; };
+		6D00E0F31FB84C01009D267F /* trainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D00E0F21FB84C01009D267F /* trainTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		6D00E0E01FB83702009D267F /* testingmmlmmrUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testingmmlmmrUITests.swift; sourceTree = "<group>"; };
 		6D00E0E21FB83702009D267F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D00E0EE1FB83718009D267F /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		6D00E0F21FB84C01009D267F /* trainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trainTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				6D00E0D51FB83702009D267F /* testingmmlmmrTests.swift */,
+				6D00E0F21FB84C01009D267F /* trainTests.swift */,
 				6D00E0D71FB83702009D267F /* Info.plist */,
 			);
 			path = testingmmlmmrTests;
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D00E0F31FB84C01009D267F /* trainTests.swift in Sources */,
 				6D00E0D61FB83702009D267F /* testingmmlmmrTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
