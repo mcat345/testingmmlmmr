@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         print("some new feature")
         print("another ffff")
+        print("hotfix")
     }
 }
 
